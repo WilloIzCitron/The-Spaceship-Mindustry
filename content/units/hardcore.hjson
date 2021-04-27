@@ -1,0 +1,32 @@
+type: flying
+name: Hardcore
+description: "[red] Fast Movement Speed But No Health Regeneration, Slower Shield Regeneration, And Slower Force Field Recovery"
+speed: 9.0
+rotateSpeed: 8.4
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 100000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.ShieldRegenFieldAbility",
+    amount: 100000
+    max: 100000
+    reload: 3000
+    range: 30
+    applyEffect: shieldApply
+    activeEffect: shieldWave
+        }
+        {
+        "type": "mindustry.entities.abilities.ForceFieldAbility",
+        "radius": 34,
+        "regen": 100,
+        "max": 50000,
+        "cooldown": 3000
+            }
+        ]

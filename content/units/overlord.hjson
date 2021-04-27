@@ -1,0 +1,56 @@
+type: flying
+name: Overlord
+description: Has A Powerful Laser To Kill Any Modded Unit
+speed: 2
+accel: 0.07
+drag: 0.10
+engineOffset: 60
+engineSize: 27
+flying: true
+mineTier: 5
+mineSpeed: 10
+buildSpeed: 5
+rotateSpeed: 0.50
+commandLimit: 15
+itemCapacity: 500
+hitSize: 80
+faceTarget: true
+range: 80
+health: 1000000
+armor: 5000
+weapons: [
+{
+  name: overlord-weapon
+  x: 0
+  y: 15
+  mirror: false
+  top: false
+  shake: 8
+  shootY: 13
+  reload: 360
+  recoil: 6
+  chargeSound: lasercharge2
+  shootSound: beam
+  continuous: true
+  cooldownTime: 400
+  firstShotDelay: 176
+  bullet: {
+    type: ContinuousLaserBulletType
+    damage: 5000
+    length: 450
+    hitEffect: hitMeltHeal
+    drawSize: 1100
+    lifetime: 350
+    shake: 3
+    despawnEffect: smokeCloud
+    smokeEffect: none
+    shootEffect: greenLaserChargeSmall
+    incendChance: 1
+    incendSpread: 5
+    incendAmount: 3
+    healPercent: 5
+    collidesTeam: true
+    colors: [
+      dc143c, ff0000, 000000, ffffff
+    ]}}
+    ]

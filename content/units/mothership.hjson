@@ -1,0 +1,66 @@
+type: flying
+name: Mothership
+description: Has A Ultra-Powerful Corvus-like Laser To Kill Any Modded Unit
+speed: 0.2
+accel: 0.07
+drag: 0.10
+engineOffset: 0
+engineSize: 50
+flying: true
+mineTier: 5
+mineSpeed: 10
+buildSpeed: 5
+rotateSpeed: 0.50
+commandLimit: 15
+itemCapacity: 500
+hitSize: 80
+faceTarget: false
+range: 80
+health: 1000000
+armor: 5000
+weapons: [
+{
+  name: big-laser
+  x: 0
+  y: 0
+  shootSound: laserblast
+  chargeSound: lasercharge
+  soundPitchMin: 0.50
+  top: true
+  mirror: false
+  shake: 28
+  shootY: 5
+  reload: 500
+  shots: 10
+  shotDelay: 30
+  inaccuracy: 12
+  recoil: 0
+  cooldownTime: 350
+  shootStatusDuration: 320
+  shootStatus: unmoving
+  firstShotDelay: 450
+  bullet: {
+    type: LaserBulletType
+    length: 650
+    damage: 20000
+    width: 120
+    lifetime: 65
+    lightningSpacing: 25
+    lightningLength: 2
+    lightningDelay: 1.1
+    lightningLengthRand: 20
+    lightningDamage: 5000
+    lightningAngleRand: 40
+    largeHit: true
+    lightColor: f0e4a8
+    lightningColor: 228b22
+    shootEffect: greenLaserCharge
+    healPercent: 50
+    collidesTeam: true
+    sideAngle: 15
+    sideWidth: 0
+    sideLength: 0
+    colors: [
+      00ff00, 228b22, 006400
+      ]}}
+      ]

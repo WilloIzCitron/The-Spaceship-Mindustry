@@ -1,0 +1,24 @@
+type: flying
+name: Speeder
+description: "[red] Extremely Fast Movement Speed But Very Weak Health And Slower Health Regeneration"
+speed: 12
+rotateSpeed: 10
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 15000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.RepairFieldAbility",
+    amount: 500
+    reload: 110
+    range: 30
+    healEffect: heal
+    activeEffect: healWaveDynamic
+        }
+        ]

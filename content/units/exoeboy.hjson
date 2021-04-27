@@ -1,0 +1,77 @@
+type: flying
+name: ExoGenesis Eboy Plays
+description: Weaker Version Of Eboy Plays, Great For Fighting ExoGenesis Bosses
+speed: 3
+accel: 0.07
+drag: 0.10
+engineOffset: 60
+engineSize: 27
+flying: true
+mineTier: 5
+mineSpeed: 10
+buildSpeed: 5
+rotateSpeed: 3
+commandLimit: 15
+itemCapacity: 500
+hitSize: 95
+faceTarget: true
+range: 80
+health: 1100000
+armor: 1500
+weapons: [
+{
+  name: machine-gun
+  x: 10
+  y: 9
+  recoil: 1
+  reload: 1
+  inaccuracy: 2
+  rotate: true
+  alternate: false
+  shots: 1
+  shootCone: 1.5
+  spacing: 1.2
+  mirror: true
+  shake: 2
+  bullet: {
+      speed: 12
+      width: 10
+      height: 14
+      lifetime: 200
+      damage: 330
+      shootSound: shoot
+        }
+     }
+  {
+  name: pulse
+  x: 60
+  y: 10
+  reload: 2
+  rotate: true
+  rotateSpeed: 4
+  alternate: true
+  mirror: true
+  inaccuracy: 2
+  recoil: 1
+  shake: 1
+  shootSound: missile
+  bullet: {
+  type: LaserBoltBulletType
+  damage: 650
+  speed: 10
+  lifetime: 200
+  collidesTeam: true
+  frontColor: ffffff
+  backColor: dc143c
+    }
+  }
+         ],
+         "abilities": [
+             {
+             "type": "mindustry.entities.abilities.ForceFieldAbility",
+             "radius": 90,
+             "regen": 0.5,
+             "max": 10000,
+             "cooldown": 600
+                 }
+             ]

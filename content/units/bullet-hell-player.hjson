@@ -1,0 +1,40 @@
+type: flying
+name: Bullet Hell Player
+description: Suppose For Bullet Hell Dodging
+speed: 6.5
+rotateSpeed: 5.0
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 80000
+armor: 0
+engineOffset: 12
+engineSize: 9
+hitSize: 25
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.ForceFieldAbility",
+    "radius": 34,
+    "regen": 5,
+    "max": 5000,
+    "cooldown": 500
+        }
+        {
+        "type": "mindustry.entities.abilities.RepairFieldAbility",
+        amount: 1500
+        reload: 700
+        range: 30
+        healEffect: heal
+        activeEffect: healWaveDynamic
+            }
+            {
+            "type": "mindustry.entities.abilities.ShieldRegenFieldAbility",
+            amount: 5000
+            max: 55000
+            reload: 400
+            range: 30
+            applyEffect: shieldApply
+            activeEffect: shieldWave
+                }
+        ]

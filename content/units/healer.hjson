@@ -1,0 +1,31 @@
+type: flying
+name: Healer
+description: "[green] Very Fast Health And Shield Regeneration But Little Stronger Health But Lowered Speed"
+speed: 7
+rotateSpeed: 7.9
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 40000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.RepairFieldAbility",
+    amount: 100
+    reload: 0.4
+    range: 30
+    healEffect: heal
+    activeEffect: healWaveDynamic
+        }
+        {
+        "type": "mindustry.entities.abilities.ForceFieldAbility",
+        "radius": 34,
+        "regen": 20,
+        "max": 10000,
+        "cooldown": 1200
+            }
+        ]

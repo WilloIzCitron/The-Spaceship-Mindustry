@@ -1,0 +1,32 @@
+type: flying
+name: Defender
+description: "[yellow] Very High Shield And Health But Lower Speed No Health Regeneration"
+speed: 5
+rotateSpeed: 4.0
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 95000
+armor: 0
+engineOffset: 12
+engineSize: 9
+hitSize: 25
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.ForceFieldAbility",
+    "radius": 34,
+    "regen": 40,
+    "max": 35000,
+    "cooldown": 1000
+        }
+            {
+            "type": "mindustry.entities.abilities.ShieldRegenFieldAbility",
+            amount: 10000
+            max: 70000
+            reload: 650
+            range: 30
+            applyEffect: shieldApply
+            activeEffect: shieldWave
+                }
+        ]

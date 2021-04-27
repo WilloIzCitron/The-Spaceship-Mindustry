@@ -1,0 +1,23 @@
+type: flying
+name: Ghostly Ship
+description: "[red] Fast Movement Speed But Has A Built-in Holy Mantle That Last For 1 Hit And A Very Long Recovery"
+speed: 9.3
+rotateSpeed: 9
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 1
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+        {
+        "type": "mindustry.entities.abilities.ForceFieldAbility",
+        "radius": 36,
+        "regen": 2,
+        "max": 5000,
+        "cooldown": 2500
+            }
+        ]

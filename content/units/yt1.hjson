@@ -1,0 +1,56 @@
+type: flying
+name: ElectricGun
+description: Whoa, That's A Big Titan Ship
+speed: 3
+accel: 0.07
+drag: 0.10
+engineOffset: 60
+engineSize: 27
+flying: true
+mineTier: 5
+mineSpeed: 10
+buildSpeed: 5
+rotateSpeed: 3
+commandLimit: 15
+itemCapacity: 500
+hitSize: 95
+faceTarget: true
+range: 80
+health: 500000
+armor: 5000
+weapons: [
+{
+  name: machine-gun
+  x: 10
+  y: 9
+  recoil: 1
+  reload: 0.2
+  inaccuracy: 2
+  rotate: false
+  alternate: false
+  shots: 1
+  shootCone: 1.5
+  spacing: 1.2
+  mirror: true
+  shake: 1
+  bullet: {
+      speed: 9
+      width: 10
+      height: 14
+      lifetime: 100
+      damage: 80
+      shootSound: shoot
+        }
+     }
+     ]
+     "abilities": [
+         {
+         "type": "mindustry.entities.abilities.ShieldRegenFieldAbility",
+         amount: 10000
+         max: 1500000
+         reload: 1000
+         range: 30
+         applyEffect: shieldApply
+         activeEffect: shieldWave
+             }
+         ]

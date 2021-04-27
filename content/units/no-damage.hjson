@@ -1,0 +1,23 @@
+type: flying
+name: No Damage Player
+description: "[red] Don't Get Hit If Force Field Is Broken"
+speed: 8.5
+rotateSpeed: 6.0
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 1
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.ForceFieldAbility",
+    "radius": 30,
+    "regen": 15,
+    "max": 15000,
+    "cooldown": 300
+        }
+        ]

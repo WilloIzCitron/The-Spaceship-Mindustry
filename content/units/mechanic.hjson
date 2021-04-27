@@ -1,0 +1,25 @@
+type: flying
+name: Shield Mechanic
+description: "[yellow] Even Reduced Speed But Has A Built-in AOE Shield Generator For Protecting Players [red] No Regeneration"
+speed: 5.8
+rotateSpeed: 8.9
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 40000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+  {
+  "type": "mindustry.entities.abilities.ShieldRegenFieldAbility",
+  amount: 5000
+  max: 75000
+  reload: 600
+  range: 160
+  applyEffect: shieldApply
+  activeEffect: shieldWave
+    }
+    ]

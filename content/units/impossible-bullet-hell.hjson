@@ -1,0 +1,64 @@
+type: flying
+name: Impossible Bullet Hell
+description: Please Don't Even Try Dodging This Boss, It's Too Impossible To Dodge
+speed: 0.2
+accel: 0.07
+drag: 0.20
+engineOffset: 20
+engineSize: 30
+flying: true
+mineTier: 5
+mineSpeed: 10
+buildSpeed: 5
+rotateSpeed: 0.50
+commandLimit: 15
+itemCapacity: 500
+hitSize: 80
+faceTarget: true
+range: 220
+health: 1000000
+armor: 5000
+weapons: [
+{"name": "bullet-hell-weapon",
+  "x": 0,
+  "y": 3,
+  "mirror": false,
+  "top": false,
+  shootY: 0
+  shootCone: 360
+    recoil: 0
+	reload: 12
+	shots: 35
+  shotDelay: 1.5
+  spacing: 10
+	inaccuracy: 0
+	velocityRnd: 0
+	cooldownTime: 15
+    chargeSound: artillery
+	firstShotDelay: 3.54
+  "shootSound": "missile",
+    "bullet": {
+    type: "basicBulletType",
+    frontColor: dc143c
+	  backColor: ff0000
+	  trailColor: 8b0000
+	  hitColor: 8b0000
+      hitEffect: nuclearcloud
+      hitSound: shootBig
+      trailEffect: steam
+      trailChance: 1
+      despawnEffect: shootPyraFlame
+      shootEffect: lancerLaserChargeBegin
+      smokeEffect: impactsmoke
+      width: 15
+      height: 15
+      speed: 4
+      lifetime: 600
+	    damage: 5000
+      hittable: false
+      pierce: true
+	    pierceBuilding: false
+	    pierceCap: 10
+      }
+    }
+    ]

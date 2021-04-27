@@ -1,0 +1,23 @@
+type: flying
+name: Valkyrie
+description: "[yellow] Extremely Fast Force Field Regeneration But Slower Force Field Recovery And No Health Regeneration"
+speed: 8
+rotateSpeed: 7
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 10000
+armor: 0
+engineOffset: 12
+engineSize: 9
+hitSize: 25
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.ForceFieldAbility",
+    "radius": 33,
+    "regen": 100,
+    "max": 70000,
+    "cooldown": 2000
+        }
+        ]

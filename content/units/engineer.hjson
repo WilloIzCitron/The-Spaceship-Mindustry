@@ -1,0 +1,24 @@
+type: flying
+name: Engineer
+description: "[yellow] Reduced Speed And Health But Has A AOE Healing To Repair Any Unit"
+speed: 7.1
+rotateSpeed: 8.9
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 30000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.RepairFieldAbility",
+    amount: 5000
+    reload: 1000
+    range: 140
+    healEffect: heal
+    activeEffect: healWaveDynamic
+        }
+        ]

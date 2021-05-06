@@ -1,0 +1,388 @@
+type: flying
+name: Spore Hell
+description: "[purple] A Bullet Hell Boss But With Fast Firing Rate And Spore And Sapped Effect"
+speed: 0.4
+accel: 0.07
+drag: 0.10
+engineOffset: 0
+engineSize: 45
+flying: true
+mineTier: 5
+mineSpeed: 10
+buildSpeed: 5
+rotateSpeed: 0.50
+commandLimit: 15
+itemCapacity: 500
+hitSize: 80
+faceTarget: true
+range: 220
+health: 1000000
+armor: 5000
+weapons: [
+{"name": "fast-bullet-hell-weapon",
+  "x": 0,
+  "y": 3,
+  "mirror": false,
+  "top": false,
+  shootY: 0
+  shootCone: 360
+    recoil: 0
+	reload: 120
+	shots: 45
+  shotDelay: 3
+  spacing: 10
+	inaccuracy: 0
+	velocityRnd: 0
+	cooldownTime: 150
+    chargeSound: lasercharge
+	firstShotDelay: 35.4
+  "shootSound": "corexplode",
+    "bullet": {
+    type: "basicBulletType",
+    frontColor: 8b008b
+    backColor: 800080
+    trailColor: 800080
+    hitColor: 4b0082
+      hitEffect: massiveExplosion
+      hitSound: explosionbig
+      trailEffect: hitMeltdown
+      trailChance: 1
+      despawnEffect: massiveExplosion
+      shootEffect: lancerLaserChargeBegin
+      smokeEffect: impactsmoke
+      status: sporeSlowed
+      statusDuration: 1000
+      width: 15
+      height: 15
+      speed: 4
+      lifetime: 600
+	    damage: 5000
+      hittable: false
+      pierce: true
+	    pierceBuilding: false
+	    pierceCap: 10
+      }
+    }
+     {"name": "double-bullet",
+      x: 0
+      y: 0
+      reload: 360
+      shots: 80
+      shotDelay: 2
+      xRand: 4
+      rotate: false
+      alternate: false
+      mirror: true
+      top: true
+      spacing: 1
+     	inaccuracy: 3
+     	velocityRnd: 0
+      shootCone: 2
+     	cooldownTime: 330
+         chargeSound: lasercharge
+     	firstShotDelay: 119.4
+       "shootSound": "shootBig",
+         "bullet": {
+         type: "basicBulletType",
+         frontColor: 8b008b
+         backColor: 800080
+         trailColor: 800080
+         hitColor: 4b0082
+           hitEffect: massiveExplosion
+           hitSound: explosionbig
+           trailEffect: hitMeltdown
+           trailChance: 1
+           despawnEffect: massiveExplosion
+           shootEffect: lancerLaserChargeBegin
+           smokeEffect: impactsmoke
+           status: sporeSlowed
+           statusDuration: 1000
+           width: 20
+           height: 20
+           speed: 4
+           lifetime: 600
+     	    damage: 5000
+           hittable: false
+           pierce: true
+     	    pierceBuilding: false
+     	    pierceCap: 5
+
+          }
+        }
+            {"name": "rail-bullet",
+            "x": 7,
+            "y": 3,
+            "mirror": false,
+            "top": true,
+            "alternate": false
+            rotate: true
+            shootY: 0
+            shootCone: 0
+              recoil: 0
+          	reload: 594
+          	shots: 3
+            shotDelay: 4
+            spacing: 0
+          	inaccuracy: 2
+          	velocityRnd: 0
+          	cooldownTime: 450
+              chargeSound: lasercharge
+          	firstShotDelay: 180
+            "shootSound": "shootBig",
+              "bullet": {
+              type: "basicBulletType",
+              frontColor: 8b008b
+              backColor: 800080
+              trailColor: 800080
+              hitColor: 4b0082
+                hitEffect: massiveExplosion
+                hitSound: explosionbig
+                trailEffect: hitMeltdown
+                trailChance: 1
+                despawnEffect: massiveExplosion
+                shootEffect: lancerLaserChargeBegin
+                smokeEffect: impactsmoke
+                status: sporeSlowed
+                statusDuration: 1000
+                width: 70
+                height: 70
+                hitSize: 65
+                speed: 6
+                lifetime: 600
+          	    damage: 5000
+                hittable: false
+                pierce: true
+          	    pierceBuilding: false
+          	    pierceCap: 3
+                }
+             }
+
+                {"name": "bullet-blast",
+                 x: 0
+                 y: 0
+                 reload: 600
+                 shots: 80
+                 shotDelay: 0
+                 xRand: 4
+                 rotate: false
+                 alternate: false
+                 mirror: true
+                 top: true
+                 spacing: 6
+                	inaccuracy: 0
+                	velocityRnd: 0
+                 shootCone: 360
+                	cooldownTime: 390
+                    chargeSound: lasercharge
+                	firstShotDelay: 239.4
+                  "shootSound": "shootBig",
+                    "bullet": {
+                    type: "basicBulletType",
+                    frontColor: 8b008b
+                    backColor: 800080
+                    trailColor: 800080
+                    hitColor: 4b0082
+                      hitEffect: massiveExplosion
+                      hitSound: explosionbig
+                      trailEffect: hitMeltdown
+                      trailChance: 1
+                      despawnEffect: massiveExplosion
+                      shootEffect: lancerLaserChargeBegin
+                      smokeEffect: impactsmoke
+                      status: sporeSlowed
+                      statusDuration: 1000
+                      width: 20
+                      height: 20
+                      speed: 6
+                      lifetime: 600
+                	    damage: 5000
+                      hittable: false
+                      pierce: true
+                	    pierceBuilding: false
+                	    pierceCap: 5
+
+                     }
+                   }
+
+                   {"name": "double-bullet-2",
+                    x: 0
+                    y: 0
+                    reload: 700
+                    shots: 100
+                    shotDelay: 3
+                    xRand: 4
+                    rotate: false
+                    alternate: false
+                    mirror: true
+                    top: true
+                    spacing: 0
+                   	inaccuracy: 4.5
+                   	velocityRnd: 0
+                    shootCone: 0
+                   	cooldownTime: 440
+                       chargeSound: lasercharge
+                   	firstShotDelay: 219.4
+                     "shootSound": "shootBig",
+                       "bullet": {
+                       type: "basicBulletType",
+                       frontColor: 8b008b
+                       backColor: 800080
+                       trailColor: 800080
+                       hitColor: 4b0082
+                         hitEffect: massiveExplosion
+                         hitSound: explosionbig
+                         trailEffect: hitMeltdown
+                         trailChance: 1
+                         despawnEffect: massiveExplosion
+                         shootEffect: lancerLaserChargeBegin
+                         smokeEffect: impactsmoke
+                         status: sporeSlowed
+                         statusDuration: 1000
+                         width: 20
+                         height: 20
+                         speed: 4
+                         lifetime: 600
+                   	    damage: 5000
+                         hittable: false
+                         pierce: true
+                   	    pierceBuilding: false
+                   	    pierceCap: 5
+                         }
+                         }
+                         {"name": "rail-bullet-2",
+                         "x": 7,
+                         "y": 3,
+                         "mirror": false,
+                         "top": true,
+                         "alternate": false
+                         rotate: true
+                         shootY: 0
+                         shootCone: 0
+                           recoil: 0
+                       	reload: 800
+                       	shots: 9
+                         shotDelay: 5
+                         spacing: 0
+                       	inaccuracy: 4
+                       	velocityRnd: 0
+                       	cooldownTime: 550
+                           chargeSound: lasercharge
+                       	firstShotDelay: 220
+                         "shootSound": "shootBig",
+                           "bullet": {
+                           type: "basicBulletType",
+                           frontColor: 8b008b
+                           backColor: 800080
+                           trailColor: 800080
+                           hitColor: 4b0082
+                             hitEffect: massiveExplosion
+                             hitSound: explosionbig
+                             trailEffect: hitMeltdown
+                             trailChance: 1
+                             despawnEffect: massiveExplosion
+                             shootEffect: lancerLaserChargeBegin
+                             smokeEffect: impactsmoke
+                             status: sapped
+                             statusDuration: 1000
+                             width: 70
+                             height: 70
+                             hitSize: 65
+                             speed: 6
+                             lifetime: 600
+                       	    damage: 5000
+                             hittable: false
+                             pierce: true
+                       	    pierceBuilding: false
+                       	    pierceCap: 3
+                             }}
+
+                             {"name": "bullet-blast-2",
+                              x: 0
+                              y: 0
+                              reload: 900
+                              shots: 80
+                              shotDelay: 0
+                              xRand: 4
+                              rotate: false
+                              alternate: false
+                              mirror: true
+                              top: true
+                              spacing: 6
+                             	inaccuracy: 0
+                             	velocityRnd: 0
+                              shootCone: 360
+                             	cooldownTime: 440
+                                 chargeSound: lasercharge
+                             	firstShotDelay: 300
+                               "shootSound": "shootBig",
+                                 "bullet": {
+                                 type: "basicBulletType",
+                                 frontColor: 8b008b
+                                 backColor: 800080
+                                 trailColor: 800080
+                                 hitColor: 4b0082
+                                   hitEffect: massiveExplosion
+                                   hitSound: explosionbig
+                                   trailEffect: hitMeltdown
+                                   trailChance: 1
+                                   despawnEffect: massiveExplosion
+                                   shootEffect: lancerLaserChargeBegin
+                                   smokeEffect: impactsmoke
+                                   status: sapped
+                                   statusDuration: 1000
+                                   width: 20
+                                   height: 20
+                                   speed: 6.5
+                                   lifetime: 600
+                             	    damage: 5000
+                                   hittable: false
+                                   pierce: true
+                             	    pierceBuilding: false
+                             	    pierceCap: 5
+                                  }}
+
+                                  {"name": "bullet-blast-3",
+                                   x: 0
+                                   y: 0
+                                   reload: 950
+                                   shots: 80
+                                   shotDelay: 0
+                                   xRand: 4
+                                   rotate: false
+                                   alternate: false
+                                   mirror: true
+                                   top: true
+                                   spacing: 6
+                                  	inaccuracy: 0
+                                  	velocityRnd: 0
+                                   shootCone: 360
+                                  	cooldownTime: 450
+                                      chargeSound: lasercharge
+                                  	firstShotDelay: 310
+                                    "shootSound": "shootBig",
+                                      "bullet": {
+                                      type: "basicBulletType",
+                                      frontColor: 8b008b
+                                      backColor: 800080
+                                      trailColor: 800080
+                                      hitColor: 4b0082
+                                        hitEffect: massiveExplosion
+                                        hitSound: explosionbig
+                                        trailEffect: hitMeltdown
+                                        trailChance: 1
+                                        despawnEffect: massiveExplosion
+                                        shootEffect: lancerLaserChargeBegin
+                                        smokeEffect: impactsmoke
+                                        status: sapped
+                                        statusDuration: 1000
+                                        width: 20
+                                        height: 20
+                                        speed: 7
+                                        lifetime: 600
+                                  	    damage: 5000
+                                        hittable: false
+                                        pierce: true
+                                  	    pierceBuilding: false
+                                  	    pierceCap: 5
+                                       }}
+                   ]

@@ -22,9 +22,9 @@ weapons: [
 {
   name: machine-gun
   x: 10
-  y: 9
+  y: 12
   recoil: 1
-  reload: 1
+  reload: 0.6
   inaccuracy: 2
   rotate: true
   alternate: false
@@ -38,15 +38,15 @@ weapons: [
       width: 10
       height: 14
       lifetime: 200
-      damage: 330
+      damage: 320
       shootSound: shoot
         }
      }
   {
-  name: pulse
-  x: 60
+  name: missile
+  x: 57
   y: 10
-  reload: 2
+  reload: 150
   rotate: true
   rotateSpeed: 4
   alternate: true
@@ -54,12 +54,18 @@ weapons: [
   inaccuracy: 2
   recoil: 1
   shake: 1
+  shots: 12
+  shotDelay: 2
   shootSound: missile
   bullet: {
-  type: LaserBoltBulletType
-  damage: 650
+  type: MissileBulletType
+  damage: 700
   speed: 10
   lifetime: 200
+  hitSize: 4
+  drawSize: 50
+  trailEffect: fallSmoke
+  trailChance: 1
   collidesTeam: true
   frontColor: ffffff
   backColor: dc143c

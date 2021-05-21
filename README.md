@@ -1,7 +1,7 @@
-# Eboy Plays Spaceship
+# Eboy Plays
 
 Use "Unit Factory" or "Testers" mod to spawn them
 
-Mod Creator: Eboy
+Mod Creator: Eboy Plays
 
 Publisher: WilloIzCitron

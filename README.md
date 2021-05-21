@@ -1,5 +1,4 @@
-# The-Spaceship
-Archived version of Eboy's the spaceship
+# Eboy Plays Spaceship
 
 Use "Unit Factory" or "Testers" mod to spawn them
 

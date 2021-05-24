@@ -1,0 +1,24 @@
+type: flying
+name: Drac
+description: "[yellow] Because of Bat Wings It Speed Is Increased Due To Weakness To Sunlight It's Health And Health Regeneration Is Reduced"
+speed: 11
+rotateSpeed: 9.9
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 20000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+    {
+    "type": "mindustry.entities.abilities.RepairFieldAbility",
+    amount: 1000
+    reload: 350
+    range: 30
+    healEffect: heal
+    activeEffect: healWaveDynamic
+        }
+        ]

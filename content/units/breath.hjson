@@ -1,0 +1,58 @@
+type: flying
+name: Breath
+description: "[yellow] Fires Ice Bullets That Slows Down Bosses But With Slower Regeneration"
+speed: 8
+rotateSpeed: 8.9
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 50000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 25
+faceTarget: true
+weapons: [
+  {
+  name: ice-gun
+  x: 0
+  y: 6
+  recoil: 1
+  reload: 8
+  inaccuracy: 0
+  rotate: true
+  alternate: false
+  shots: 5
+  shootCone: 2
+  spacing: 2
+  mirror: false
+  shake: 2
+  bullet: {
+  type: "basicBulletType",
+  frontColor: 00ffff
+  backColor: 0000ff
+  trailColor: 00ffff
+  hitColor: 00ffff
+    speed: 13
+    width: 10
+    height: 14
+    lifetime: 200
+    damage: 1
+    trailEffect: freezing
+    trailChance: 1
+    status: freezing
+    statusDuration: 500
+    shootSound: shoot
+    }
+  }
+  ]
+  "abilities": [
+      {
+      "type": "mindustry.entities.abilities.RepairFieldAbility",
+      amount: 2000
+      reload: 300
+      range: 30
+      healEffect: heal
+      activeEffect: healWaveDynamic
+          }
+          ]

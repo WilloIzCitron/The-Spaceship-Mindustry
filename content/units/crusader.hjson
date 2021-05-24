@@ -1,0 +1,33 @@
+type: flying
+name: Crusader
+description: "[green] Reduced Speed But Has Both AOE Healing and Shield"
+speed: 7
+rotateSpeed: 8.9
+flying: true
+commandLimit: 10
+itemCapacity: 100
+health: 60000
+armor: 0
+engineOffset: 14
+engineSize: 9
+hitSize: 20
+faceTarget: true
+"abilities": [
+  {
+  "type": "mindustry.entities.abilities.ShieldRegenFieldAbility",
+  amount: 5000
+  max: 80000
+  reload: 600
+  range: 200
+  applyEffect: shieldApply
+  activeEffect: shieldWave
+    }
+    {
+    "type": "mindustry.entities.abilities.RepairFieldAbility",
+    amount: 5000
+    reload: 1000
+    range: 200
+    healEffect: heal
+    activeEffect: healWaveDynamic
+        }
+    ]

@@ -1,8 +1,8 @@
 type: flying
-name: No Damage Player
-description: "[red] Don't Get Hit"
-speed: 8.5
-rotateSpeed: 6.0
+name: Death
+description: "[purple] The Most Impossible No Damage Ship Yet?"
+speed: 5.8
+rotateSpeed: 9.9
 flying: true
 commandLimit: 10
 itemCapacity: 100

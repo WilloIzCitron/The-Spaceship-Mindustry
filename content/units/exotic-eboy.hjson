@@ -1,0 +1,77 @@
+type: flying
+name: Exotic Eboy Plays
+description: Stronger Version Of Eboy Plays, Only For Fighting Hellfire
+speed: 6
+accel: 0.07
+drag: 0.10
+engineOffset: 60
+engineSize: 27
+flying: true
+mineTier: 5
+mineSpeed: 10
+buildSpeed: 5
+rotateSpeed: 3
+commandLimit: 15
+itemCapacity: 500
+hitSize: 95
+faceTarget: true
+range: 80
+health: 2500000
+armor: 6000
+weapons: [
+{
+  name: machine-gun
+  x: 10
+  y: 12
+  recoil: 1
+  reload: 0.6
+  inaccuracy: 2
+  rotate: true
+  alternate: false
+  shots: 1
+  shootCone: 1.5
+  spacing: 1.2
+  mirror: true
+  shake: 2
+  bullet: {
+      speed: 12
+      width: 10
+      height: 14
+      lifetime: 200
+      damage: 950
+      shootSound: shoot
+        }
+     }
+  {
+  name: double-machine-gun
+  x: 57
+  y: 10
+  recoil: 1
+  reload: 1
+  inaccuracy: 1
+  rotate: true
+  alternate: false
+  shots: 3
+  shootCone: 2
+  spacing: 2
+  mirror: true
+  shake: 2
+  bullet: {
+      speed: 13
+      width: 10
+      height: 14
+      lifetime: 200
+      damage: 800
+      shootSound: shoot
+    }
+  }
+         ],
+         "abilities": [
+             {
+             "type": "mindustry.entities.abilities.ForceFieldAbility",
+             "radius": 90,
+             "regen": 30,
+             "max": 30000,
+             "cooldown": 500
+                 }
+             ]
